@@ -20,4 +20,8 @@ declare module ngStorage {
     $reset(items: any): void;
   }
 
+  interface IStorageProvider {
+    setPrefix(prefix: string): void;
+  }
+
 }
