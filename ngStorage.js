@@ -1,7 +1,5 @@
-'use strict';
-
 (function() {
-
+    'use strict';
 
     var storagePrefix = 'ngStorage-';
 
@@ -15,14 +13,16 @@
     /**
      * @ngdoc object
      * @name ngStorage.$ngStorageProvider
+     * This provider is used for configuration only.
      */
-    provider('$ngStorage', function() {
-      this.setPrefix = function(newPrefix) {
+    provider('$ngStorage', {
+      setPrefix: function(newPrefix) {
         storagePrefix = newPrefix + '-';
-      };
-      this.$get = function() {
+      },
+
+      $get: function() {
         return {};
-      };
+      }
     }).
 
     /**
