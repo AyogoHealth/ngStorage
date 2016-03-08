@@ -4,9 +4,7 @@
   "private": true,
   "author": "Gias Kay Lee",
   "main": "index.js",
-  "typescript": {
-    "definition": "typescript/ngStorage.d.ts"
-  },
+  "typings": "index.d.ts",
   "licenses": [
     {
       "type": "MIT",
