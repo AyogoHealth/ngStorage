@@ -1,11 +1,8 @@
 // This is a typescript definition file for ngStorage
 
-declare module "ngStorage" {
-  var _:string;
-  export = _;
-}
+declare const ngStorage : string;
 
-declare module ngStorage {
+declare namespace ngStorage {
   interface IStorage {
     [name: string]: any;
 
@@ -23,5 +20,6 @@ declare module ngStorage {
   interface IStorageProvider {
     setPrefix(prefix: string): void;
   }
-
 }
+
+export = ngStorage;
